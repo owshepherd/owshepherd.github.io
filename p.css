@@ -1,0 +1,243 @@
+:root {
+  --green: #5CDB95;
+  --blue: #05386B;
+  --white: #EDF5E1;
+}
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--green);
+}
+.navbar {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white);
+  padding: 0px 30px;
+  margin: 0;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 30px;
+}
+.links a {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  color: var(--white);
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.links a:hover {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.splash {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  color: var(--blue);
+  margin: 0px 30px;
+}
+
+.splash-left .hello {
+  font-family: 'Sanchez', serif;
+  font-size: 96px;
+  margin: 0;
+}
+.splash-left p {
+  font-size: 24px;
+  width: calc(100% - 20px);
+}
+.splash .button-case {
+  padding: 0px 0px 30px 0px;
+}
+.splash-left button {
+  border: 2px solid var(--blue);
+  border-radius: 19px;
+  background: var(--blue);
+  color: var(--white);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.splash-left button:hover {
+  background: none;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+  padding: 10px 30px;
+  background: var(--blue);
+  color: var(--white);
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-thumbnail {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: 10px;
+  border: 6px solid var(--white);
+  border-radius: 9px;
+  z-index: -0;
+}
+ 
+.portfolio-thumbnail img {
+  transition: transform .5s ease;
+}
+
+.portfolio-thumbnail:hover img {
+  transform: scale(1.1);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  flex-wrap: wrap;
+}
+
+.skill-badge {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2 100%);
+  background: var(--blue);
+  margin: 10px;
+  border-radius: 9px;
+}
+
+.skill-badge-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 90px;
+  background: var(--white);
+  border-radius: 9px 9px 0px 0px;
+}
+
+.skill-badge-image img {
+  width: 60px;
+}
+
+.skill-badge-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 0px;
+  color: var(--white);
+}
+
+.skill-badge-text h5 {
+  font-weight: normal;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.education-badge {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 80px 30px;
+  background: var(--white);
+  border-radius: 9px;
+  margin: 10px;
+  height: 110px;
+}
+
+.education-badge-institution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  background: var(--blue);
+  border-radius: 0px 0px 9px 9px;
+}
+
+.education-badge-institution h3 {
+  color: var(--white);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.education-badge-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.education-badge-logo img {
+  height: 60px;
+  width: 60px;
+}
+
+/* .education-badge-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 13px;
+  color: var(--blue);
+} */
+
+.education-badge-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 42px 20px;
+  margin-top: 8px;
+}
+
+.education-badge-course {
+  display: flex;
+  align-items: flex-start;
+  margin-top:3px;
+}
+.education-badge-year {
+  display: flex;
+  align-items: flex-start;
+}
+
+.education-badge-text h4 {
+  font-size: 16px;
+}
+
+.education-badge-text h5 {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: normal;
+}
