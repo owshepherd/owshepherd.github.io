@@ -11,6 +11,7 @@
 
 body {
   background: var(--green);
+  overflow-x: hidden;
 }
 .navbar {
   display: grid;
@@ -22,7 +23,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   color: var(--white);
-  padding: 0px 30px;
+  padding: 12px 30px;
   margin: 0;
 }
 .links {
@@ -50,9 +51,10 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
   color: var(--blue);
+}
+.splash-left {
   margin: 0px 30px;
 }
-
 .splash-left .hello {
   font-family: 'Sanchez', serif;
   font-size: 96px;
@@ -86,11 +88,15 @@ body {
   display: flex;
   align-items: center;
   color: var(--blue);
-  padding: 10px 30px;
+  padding: 10px 0px;
   background: var(--blue);
   color: var(--white);
   height: 50px;
-  text-transform: uppercase;
+}
+.banner h2 {
+  margin-left: 20px;
+  font-family: 'Sanchez', serif;
+  letter-spacing: 0.1em;
 }
 
 .portfolio {
@@ -176,6 +182,7 @@ body {
   border-radius: 9px;
   margin: 10px;
   height: 110px;
+  width: 340px;
 }
 
 .education-badge-institution {
@@ -186,6 +193,8 @@ body {
   grid-column: 1 / span 2;
   background: var(--blue);
   border-radius: 0px 0px 9px 9px;
+  height: 100%;
+  width: 340px;
 }
 
 .education-badge-institution h3 {
@@ -205,15 +214,6 @@ body {
   height: 60px;
   width: 60px;
 }
-
-/* .education-badge-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 13px;
-  color: var(--blue);
-} */
 
 .education-badge-text {
   display: grid;
@@ -240,4 +240,80 @@ body {
   font-size: 14px;
   margin-top: 5px;
   font-weight: normal;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  border: 2px solid var(--blue);
+  border-radius: 19px;
+  background: var(--blue);
+  color: var(--white);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background: none;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* Add a background color and some padding around the form */
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+  }
+  .name {
+    grid-column: 1 / span 2;
+  }
+  .links {
+    display: none;
+  }
+  .splash-left p {
+    margin: 0px 50px;
+  }
+  .splash-left {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 40px;
+  }
+  .splash .button-case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .splash button {
+    width: 300px;
+  }
+  .skill-badge:nth-child(5n) {
+    break-after: always;
+    page-break-after: always
+  }
+  .education-badge {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
