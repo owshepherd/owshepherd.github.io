@@ -1,4 +1,4 @@
-# Readme for Owen Shepherd#
+# Readme for Owen Shepherd #
 ## owshepherd.github.io ##
 
 ### Link to GitHub repository ###
