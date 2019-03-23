@@ -15,7 +15,7 @@
 
 ### Moodboard and Design Process Screenshots ###
 #### Moodboard ####
-![Figma](figma.png)
+![Moodboard](moodboard.png)
 
 #### Font Testing via FontJoy ####
 ![FontJoy 1](fontjoy0.png)
