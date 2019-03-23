@@ -7,243 +7,260 @@
   <title>Owen</title>
   <link rel="stylesheet" href="p.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Sanchez" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <script>
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
+
 </head>
 <body>
-
 <div class="navbar">
-  <h2 class="name">Owen</h2>
+  <h2 class="name">Owen Shepherd</h2>
   <div class="links">
-    <a href="#">Hello!</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Skills</a>
-    <a href="#">Education</a>
-    <a href="#">Contact Me</a>
+    <a href="#hello">Hello!</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact Me</a>
   </div>
 </div>
 
-<div class="splash">
-  <div class="splash-left">
-    <h1 class="hello">Hello.</h1>
-    <p>Owen is an aspiring full-stack developer based in Melbourne, Australia. Owen favours the "less is more" approach to design — favouring sites that get straight to the point with minimal clutter and high visual impact.</p>
-    <div class="button-case">
-      <button>Download CV</button>
-      <button>Contact Me</button>
+  <div class="splash">
+    <div class="splash-left">
+      <h1 class="hello" id="hello">Hello.</h1>
+      <p>Owen is an aspiring full-stack developer based in Melbourne, Australia. Owen favours the "less is more" approach to design — favouring sites that get straight to the point with minimal clutter and high visual impact.</p>
+      <div class="button-case">
+        <a href="http://www.linkedin.com"><button>Visit LinkedIn</button></a>
+        <a href="http://www.github.com"><button>Github</button></a>
+        <a href="#contact"><button>Contact Me</button></a>
+      </div>
+      <!-- Redundant (buttons above can be used in lieu of posted contact details); I also don't want bots e-mailing or calling me -->
+      <div class="contact-details">
+        <h3>Owen Shepherd</h3>
+        <p><i class="fas fa-envelope-open-text"></i> &nbsp; owen@fullstack.com</p>
+        <p><i class="fas fa-phone"></i> &nbsp; (03) 9720-1234</p>
+      </div>
+    </div>
+
+    <div class="splash-right">
+      <!-- Photo can be inserted here in the future; should not display in responsive mode -->
     </div>
   </div>
 
-  <div class="splash-right">
-    <!-- Photo can be inserted here in the future; should not display in responsive mode -->
-  </div>
-</div>
-
-<div class="banner">
-  <h2>Portfolio</h2>
-</div>
-
-<!-- Portfolio should contain 6 images -->
-
-<div class="portfolio">
-  <div class="portfolio-thumbnail">
-    <img src="Classic-Sci-Fi-Covers.jpg" alt="">
+  <div class="banner" id="portfolio">
+    <h2>Portfolio</h2>
   </div>
 
-  <div class="portfolio-thumbnail">
-    <img src="Classic-Sci-Fi-Covers.jpg" alt="">
-  </div>
+  <!-- Portfolio should contain 6 images -->
 
-  <div class="portfolio-thumbnail">
-    <img src="Classic-Sci-Fi-Covers.jpg" alt="">
-  </div>
-
-  <div class="portfolio-thumbnail">
-    <img src="Classic-Sci-Fi-Covers.jpg" alt="">
-  </div>
-              
-  <div class="portfolio-thumbnail">
-    <img src="Classic-Sci-Fi-Covers.jpg" alt="">
-  </div>
-
-  <div class="portfolio-thumbnail">
-    <img src="Classic-Sci-Fi-Covers.jpg" alt="">
-  </div>
-</div>
-
-<div class="banner">
-  <h2>Skills</h2>
-</div>
-
-<div class="skills">
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="html.svg" alt="HTML5">
+  <div class="portfolio">
+    <div class="portfolio-thumbnail">
+      <img src="Classic-Sci-Fi-Covers.jpg" alt="">
     </div>
-    <div class="skill-badge-text">
-      <h5>HTML5</h5>
+
+    <div class="portfolio-thumbnail">
+      <img src="Classic-Sci-Fi-Covers.jpg" alt="">
+    </div>
+
+    <div class="portfolio-thumbnail">
+      <img src="Classic-Sci-Fi-Covers.jpg" alt="">
+    </div>
+
+    <div class="portfolio-thumbnail">
+      <img src="Classic-Sci-Fi-Covers.jpg" alt="">
+    </div>
+                
+    <div class="portfolio-thumbnail">
+      <img src="Classic-Sci-Fi-Covers.jpg" alt="">
+    </div>
+
+    <div class="portfolio-thumbnail">
+      <img src="Classic-Sci-Fi-Covers.jpg" alt="">
     </div>
   </div>
 
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="css.svg" alt="CSS3">
-    </div>
-    <div class="skill-badge-text">
-      <h5>CSS3</h5>
-    </div>
+  <div class="banner" id="skills">
+    <h2>Skills</h2>
   </div>
 
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="js.svg" alt="Javascript">
-    </div>
-    <div class="skill-badge-text">
-      <h5>Javascript</h5>
-    </div>
-  </div>
-
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="ruby.svg" alt="Ruby">
-    </div>
-    <div class="skill-badge-text">
-      <h5>Ruby</h5>
-    </div>
-  </div>
-
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="rails.svg" alt="Ruby on Rails">
-    </div>
-    <div class="skill-badge-text">
-      <h5>Ruby on Rails</h5>
-    </div>
-  </div>
-
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="mongo.svg" alt="MongoDB">
-    </div>
-    <div class="skill-badge-text">
-      <h5>MongoDB</h5>
-    </div>
-  </div>
-
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="node.svg" alt="Node.js">
-    </div>
-    <div class="skill-badge-text">
-      <h5>Node</h5>
-    </div>
-  </div>
-
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="react.svg" alt="React">
-    </div>
-    <div class="skill-badge-text">
-      <h5>React</h5>
-    </div>
-  </div>
-
-  <div class="skill-badge">
-    <div class="skill-badge-image">
-      <img src="vue.svg" alt="Vue.js">
-    </div>
-    <div class="skill-badge-text">
-      <h5>Vue.js</h5>
-    </div>
-  </div>
-
-  <div class="skill-badge">
+  <div class="skills">
+    <div class="skill-badge">
       <div class="skill-badge-image">
-        <img src="bootstrap.svg" alt="Bootstrap">
+        <img src="html.svg" alt="HTML5">
       </div>
       <div class="skill-badge-text">
-        <h5>Bootstrap</h5>
+        <h5>HTML5</h5>
       </div>
     </div>
-</div>
 
-<div class="banner">
-  <h2>Education</h2>
-</div>
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="css.svg" alt="CSS3">
+      </div>
+      <div class="skill-badge-text">
+        <h5>CSS3</h5>
+      </div>
+    </div>
 
-<div class="education">
-  <div class="education-badge">
-    <div class="education-badge-logo">
-      <img src="coderacademy.jpg" alt="CoderAcademy">
-    </div>
-    <div class="education-badge-text">
-      <div class="education-badge-course">
-        <h4>Full-stack Developer Bootcamp</h4>
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="js.svg" alt="Javascript">
       </div>
-      <div class="education-badge-year">
-        <h5>2019</h5>
+      <div class="skill-badge-text">
+        <h5>Javascript</h5>
       </div>
     </div>
-    <div class="education-badge-institution">
-      <h3>CoderAcademy</h3>
+
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="ruby.svg" alt="Ruby">
+      </div>
+      <div class="skill-badge-text">
+        <h5>Ruby</h5>
+      </div>
+    </div>
+
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="rails.svg" alt="Ruby on Rails">
+      </div>
+      <div class="skill-badge-text">
+        <h5>Ruby on Rails</h5>
+      </div>
+    </div>
+
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="mongo.svg" alt="MongoDB">
+      </div>
+      <div class="skill-badge-text">
+        <h5>MongoDB</h5>
+      </div>
+    </div>
+
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="node.svg" alt="Node.js">
+      </div>
+      <div class="skill-badge-text">
+        <h5>Node</h5>
+      </div>
+    </div>
+
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="react.svg" alt="React">
+      </div>
+      <div class="skill-badge-text">
+        <h5>React</h5>
+      </div>
+    </div>
+
+    <div class="skill-badge">
+      <div class="skill-badge-image">
+        <img src="vue.svg" alt="Vue.js">
+      </div>
+      <div class="skill-badge-text">
+        <h5>Vue.js</h5>
+      </div>
+    </div>
+
+    <div class="skill-badge">
+        <div class="skill-badge-image">
+          <img src="bootstrap.svg" alt="Bootstrap">
+        </div>
+        <div class="skill-badge-text">
+          <h5>Bootstrap</h5>
+        </div>
+      </div>
+  </div>
+
+  <div class="banner" id="education">
+    <h2>Education</h2>
+  </div>
+
+  <div class="education">
+    <div class="education-badge">
+      <div class="education-badge-logo">
+        <img src="coderacademy.jpg" alt="CoderAcademy">
+      </div>
+      <div class="education-badge-text">
+        <div class="education-badge-course">
+          <h4>Full-stack Developer Bootcamp</h4>
+        </div>
+        <div class="education-badge-year">
+          <h5>2019</h5>
+        </div>
+      </div>
+      <div class="education-badge-institution">
+        <h3>CoderAcademy</h3>
+      </div>
+    </div>
+
+    <div class="education-badge">
+      <div class="education-badge-logo">
+        <img src="coderacademy.jpg" alt="CoderAcademy">
+      </div>
+      <div class="education-badge-text">
+        <div class="education-badge-course">
+          <h4>Diploma of Information Technology</h4>
+        </div>
+        <div class="education-badge-year">
+          <h5>2018</h5>
+        </div>
+      </div>
+      <div class="education-badge-institution">
+        <h3>RMIT University</h3>
+      </div>
+    </div>
+
+    <!-- Not relevant to portfolio but kept in case I change my mind -->
+    <div class="education-badge">
+      <div class="education-badge-logo">
+        <img src="coderacademy.jpg" alt="CoderAcademy">
+      </div>
+      <div class="education-badge-text">
+        <div class="education-badge-course">
+          <h4>Masters of Interpreting and Translation Studies</h4>
+        </div>
+        <div class="education-badge-year">
+          <h5>2016</h5>
+        </div>
+      </div>
+      <div class="education-badge-institution">
+        <h3>Monash University</h3>
+      </div>
     </div>
   </div>
 
-  <div class="education-badge">
-    <div class="education-badge-logo">
-      <img src="coderacademy.jpg" alt="CoderAcademy">
-    </div>
-    <div class="education-badge-text">
-      <div class="education-badge-course">
-        <h4>Diploma of Information Technology</h4>
-      </div>
-      <div class="education-badge-year">
-        <h5>2018</h5>
-      </div>
-    </div>
-    <div class="education-badge-institution">
-      <h3>RMIT University</h3>
-    </div>
+  <div class="banner" id="contact">
+    <h2>Contact Me</h2>
   </div>
 
-  <!-- Not relevant to portfolio but kept in case I change my mind -->
-  <!-- <div class="education-badge">
-    <div class="education-badge-logo">
-      <img src="coderacademy.jpg" alt="CoderAcademy">
+  <div class="contact">
+    <div class="contact-form">
+      <form action="#">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+
+        <label for="email">E-mail Address</label>
+        <input type="text" id="email" name="email" placeholder="E-mail Address">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
     </div>
-    <div class="education-badge-text">
-      <div class="education-badge-course">
-        <h4>Masters of Interpreting and Translation Studies</h4>
-      </div>
-      <div class="education-badge-year">
-        <h5>2016</h5>
-      </div>
-    </div>
-    <div class="education-badge-institution">
-      <h3>Monash University</h3>
-    </div>
-  </div> -->
-</div>
-
-<div class="banner">
-  <h2>Contact Me</h2>
-</div>
-
-<div class="contact">
-  <div class="contact-form">
-    <form action="#">
-
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Name">
-
-      <label for="email">E-mail Address</label>
-      <input type="text" id="email" name="email" placeholder="E-mail Address">
-
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-
-      <input type="submit" value="Submit">
-
-    </form>
   </div>
-</div>
 
 </body>
 </html>
