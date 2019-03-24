@@ -26,23 +26,23 @@ One issue I have about my site, however, is the alignment of badges used in the 
 
 ## Design documentation ##
 ### Figma Screenshots ###
-![Figma](figma.png)
+![Figma](readme/figma.png)
 
 ### Moodboard and Design Process Screenshots ###
 #### Moodboard ####
-![Moodboard](moodboard.png)
+![Moodboard](readme/moodboard.png)
 
 #### Font Testing via FontJoy ####
-![FontJoy 1](fontjoy0.png)
-![FontJoy 2](fontjoy1.png)
-![FontJoy 3](fontjoy2.png)
+![FontJoy 1](readme/fontjoy0.png)
+![FontJoy 2](readme/fontjoy1.png)
+![FontJoy 3](readme/fontjoy2.png)
 
 ## Details of planning process ##
 ### Project plan and timeline ###
 
 
 ### Trello Board Screenshots ###
-![Trello](trello.png)
+![Trello](readme/trello.png)
 
 
 ## Short answer Q&A ##
