@@ -17,6 +17,15 @@ The navigation bar found at the top of the page is hidden when the website is vi
 One issue I have about my site, however, is the alignment of badges used in the "Skills" section of the website. With the use of flexbox, this section can sometimes look a little messy depending on how the resolution is sized. A solution to this would be to use CSS to force a line break after a certain number of items appear in a row (which I have done). However, the code used (page-break and page-break-after) are currently only supported by Mozilla Firefox.
 
 ### Sitemap ###
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+-<url>
+<loc>https://owshepherd.github.io/</loc>
+<lastmod>2019-03-24T01:20:51+00:00</lastmod>
+</url>
+</urlset>
+```
 
 ### Screenshots ###
 
