@@ -1,6 +1,10 @@
 # Readme for Owen Shepherd #
 ## owshepherd.github.io ##
 
+#### 2021 ####
+### Portfolio in its current state should be considered an unfinished project ###
+## I will be doing a complete overhaul of my portfolio as I'm not happy with it in its current state in all aspects. I'll be making a new portfolio site in the future using React. This will include a complete redesign. ##
+
 ### Link to GitHub repository ###
 [https://github.com/owshepherd/owshepherd.github.io](https://github.com/owshepherd/owshepherd.github.io "GitHub Repository")
 
